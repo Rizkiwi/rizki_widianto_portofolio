@@ -1,73 +1,226 @@
-# Welcome to your Lovable project
+# Rizki Widianto - Portfolio
 
-## Project info
+Portfolio website profesional untuk Data Engineer & Data Analyst yang dibangun dengan React, Vite, TypeScript, dan Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/2bb98f4e-c9b5-42c0-86f8-319a0c3df255
+## 🚀 Teknologi
 
-## How can I edit this code?
+- **React 18** - Library UI modern
+- **Vite** - Build tool super cepat
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Shadcn/ui** - Komponen UI yang beautiful
+- **Lucide React** - Icon set
 
-There are several ways of editing your application.
+## 📋 Fitur
 
-**Use Lovable**
+- ✅ Responsive design (mobile-first)
+- ✅ Dark/Light mode
+- ✅ Smooth scroll & animations
+- ✅ Project filtering by tags
+- ✅ SEO optimized (meta tags, JSON-LD, sitemap)
+- ✅ Performance optimized (lazy loading, code splitting)
+- ✅ Accessible (ARIA labels, keyboard navigation)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2bb98f4e-c9b5-42c0-86f8-319a0c3df255) and start prompting.
+## 🛠️ Instalasi & Development
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prasyarat
 
-**Use your preferred IDE**
+- Node.js 18+ dan npm/yarn/pnpm
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Setup Lokal
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone repository
+git clone https://github.com/rizkiwidianto/portfolio.git
+cd portfolio
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Jalankan development server
 npm run dev
+
+# Build untuk production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+Server development akan berjalan di `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Struktur Folder
 
-**Use GitHub Codespaces**
+```
+portfolio/
+├── public/
+│   ├── assets/
+│   │   └── cv.pdf           # File CV (replace dengan CV asli)
+│   ├── data/
+│   │   └── projects.json    # Data proyek
+│   ├── robots.txt
+│   └── sitemap.xml
+├── src/
+│   ├── assets/              # Gambar dan media
+│   │   ├── profile.jpg
+│   │   ├── highlight.jpg
+│   │   └── projects/
+│   ├── components/          # React components
+│   │   ├── ui/             # Shadcn UI components
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Highlights.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── pages/
+│   │   └── Index.tsx       # Main page
+│   ├── index.css           # Global styles & design system
+│   └── main.tsx
+└── README.md
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Customization
 
-## What technologies are used for this project?
+### 1. Update Konten Personal
 
-This project is built with:
+Edit file berikut dengan informasi Anda:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `src/components/Hero.tsx` - Nama, deskripsi, stats
+- `src/components/Highlights.tsx` - Pengalaman kerja & prestasi
+- `src/components/Contact.tsx` - Email, LinkedIn, GitHub
+- `public/data/projects.json` - Proyek-proyek Anda
 
-## How can I deploy this project?
+### 2. Ganti Gambar
 
-Simply open [Lovable](https://lovable.dev/projects/2bb98f4e-c9b5-42c0-86f8-319a0c3df255) and click on Share -> Publish.
+Letakkan gambar Anda di `src/assets/`:
 
-## Can I connect a custom domain to my Lovable project?
+- `profile.jpg` - Foto profil (512x512px)
+- `highlight.jpg` - Hero/highlight image (1280x720px)
+- `projects/*.png` - Screenshot proyek (1024x576px)
 
-Yes, you can!
+Kemudian import di komponen yang sesuai.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### 3. Update CV
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Replace file `public/assets/cv.pdf` dengan CV Anda.
+
+### 4. Ubah Warna & Desain
+
+Edit design system di `src/index.css`:
+
+```css
+:root {
+  --primary: 213 84% 45%;      /* Warna utama */
+  --accent: 203 92% 56%;       /* Warna aksen */
+  --background: 220 20% 97%;   /* Background */
+  /* ... */
+}
+```
+
+## 🌐 Deploy ke GitHub Pages
+
+### Opsi 1: Via GitHub Settings (Recommended)
+
+1. Push code ke GitHub repository
+2. Buka **Settings** → **Pages**
+3. Pilih **Source**: Deploy from a branch
+4. Pilih branch `main` dan folder `/root`
+5. Klik **Save**
+
+### Opsi 2: Menggunakan gh-pages (Otomatis)
+
+```bash
+# Install gh-pages
+npm install --save-dev gh-pages
+
+# Tambahkan script di package.json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+# Deploy
+npm run deploy
+```
+
+### Konfigurasi Custom Domain (Opsional)
+
+1. Buat file `public/CNAME` dengan domain Anda:
+
+```
+yourdomain.com
+```
+
+2. Di repository settings → Pages, masukkan custom domain
+3. Update DNS provider dengan CNAME record pointing ke `username.github.io`
+
+## 🔧 Update Data Proyek
+
+Edit `public/data/projects.json`:
+
+```json
+[
+  {
+    "title": "Nama Project",
+    "tags": ["ETL", "Analytics"],
+    "stack": ["Python", "SQL"],
+    "summary": "Deskripsi singkat project",
+    "image": "/src/assets/projects/project-image.png",
+    "github": "https://github.com/username/repo",
+    "demo": "https://demo-url.com",
+    "highlights": [
+      "Achievement 1",
+      "Achievement 2",
+      "Achievement 3"
+    ]
+  }
+]
+```
+
+## ⚡ Performance Tips
+
+- Gunakan WebP/AVIF untuk gambar (lebih kecil)
+- Compress gambar sebelum upload (max 200KB per gambar)
+- Lazy load images dengan `loading="lazy"`
+- Code splitting otomatis dengan Vite
+
+## 📊 SEO Checklist
+
+- ✅ Meta tags (title, description, keywords)
+- ✅ Open Graph tags untuk social media
+- ✅ JSON-LD structured data
+- ✅ Sitemap.xml
+- ✅ Robots.txt
+- ✅ Semantic HTML (header, main, section, article)
+- ✅ Alt text untuk semua gambar
+- ✅ Fast loading time (Lighthouse score >90)
+
+## 🐛 Troubleshooting
+
+**Build error?**
+- Pastikan semua dependencies terinstall: `npm install`
+- Clear cache: `rm -rf node_modules && npm install`
+
+**Images tidak muncul?**
+- Pastikan path gambar benar
+- Import gambar sebagai ES6 module di component
+
+**GitHub Pages 404?**
+- Pastikan build output di folder `dist`
+- Cek base path di `vite.config.ts`
+
+## 📝 License
+
+MIT License - bebas digunakan untuk proyek personal/komersial
+
+## 📧 Kontak
+
+Rizki Widianto
+- Email: rizki.widianto@example.com
+- LinkedIn: [linkedin.com/in/rizkiwidianto](https://linkedin.com/in/rizkiwidianto)
+- GitHub: [github.com/rizkiwidianto](https://github.com/rizkiwidianto)
+
+---
+
+Dibuat dengan ❤️ menggunakan React & Vite

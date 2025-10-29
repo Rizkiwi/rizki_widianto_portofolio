@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Hospital ETL Pipelines",
+    "tags": ["ETL", "Airflow", "Database"],
+    "stack": ["Python", "Apache Airflow", "MySQL", "PostgreSQL"],
+    "summary": "Pipeline sinkronisasi data klinis end-to-end dengan preview CSV dan validasi otomatis.",
+    "image": "/src/assets/projects/etl-hospital.png",
+    "github": "https://github.com/rizkiwidianto/etl-hospital",
+    "demo": "",
+    "highlights": [
+      "12+ DAG dengan incremental upsert untuk efisiensi tinggi",
+      "Konversi zona waktu otomatis ke Asia/Jakarta",
+      "Sistem validasi & preview CSV terintegrasi"
+    ]
+  },
+  {
+    "title": "Analytics Dashboard",
+    "tags": ["Analytics", "Dashboard", "BI"],
+    "stack": ["Python", "Streamlit", "Pandas", "Plotly"],
+    "summary": "Dashboard interaktif untuk analisis data bisnis real-time dengan visualisasi KPI.",
+    "image": "/src/assets/projects/analytics-dashboard.png",
+    "github": "https://github.com/rizkiwidianto/analytics-dashboard",
+    "demo": "https://analytics-demo.vercel.app",
+    "highlights": [
+      "Visualisasi 15+ metrik bisnis penting",
+      "Filter interaktif dan drill-down capabilities",
+      "Export otomatis ke PDF dan Excel"
+    ]
+  },
+  {
+    "title": "ML Prediction Model",
+    "tags": ["ML", "Analytics", "NLP"],
+    "stack": ["Python", "Scikit-learn", "TensorFlow", "FastAPI"],
+    "summary": "Model machine learning untuk prediksi churn customer dengan akurasi tinggi.",
+    "image": "/src/assets/projects/ml-model.png",
+    "github": "https://github.com/rizkiwidianto/ml-churn-prediction",
+    "demo": "",
+    "highlights": [
+      "Akurasi model 94% dengan Random Forest",
+      "Feature engineering & selection otomatis",
+      "REST API deployment dengan FastAPI"
+    ]
+  }
+]
