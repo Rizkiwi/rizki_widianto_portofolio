@@ -74,9 +74,9 @@ const Hero = () => {
             <Button
               variant="hero"
               size="lg"
-              onClick={() => scrollToSection("#highlights")}
+              onClick={() => scrollToSection("#experience")}
             >
-              Lihat Highlights
+              Lihat Experience
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="/assets/cv.pdf" download>
