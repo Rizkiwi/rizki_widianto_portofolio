@@ -39,7 +39,7 @@ const Highlights = () => {
     <section id="highlights" className="section-padding bg-muted/30">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent break-words">
             Highlights
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
