@@ -1,6 +1,5 @@
 import { Calendar, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import highlightImage from "@/assets/highlight.jpg";
 
 const Highlights = () => {
   const highlights = [
@@ -48,72 +47,51 @@ const Highlights = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
-          {/* Timeline Cards */}
-          <div className="space-y-6">
-            {highlights.map((item, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-border animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <TrendingUp className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-foreground mb-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-1">
-                      {item.organization}
-                    </p>
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground mb-4">
-                      <Calendar className="w-4 h-4" />
-                      {item.period}
-                    </div>
-                    <ul className="space-y-2">
-                      {item.achievements.map((achievement, i) => (
-                        <li
-                          key={i}
-                          className="text-sm text-foreground/80 flex items-start gap-2"
-                        >
-                          <span className="text-accent mt-1">•</span>
-                          <span>{achievement}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+        {/* Timeline Cards */}
+        <div className="max-w-4xl mx-auto space-y-6">
+          {highlights.map((item, index) => (
+            <div
+              key={index}
+              className="bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-border animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Supporting Image */}
-          <div className="relative">
-            <div className="sticky top-24">
-              <div className="relative rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src={highlightImage}
-                  alt="Data Engineering Workspace"
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-sm text-foreground/90">
-                    Pipeline data modern untuk analitik real-time
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-foreground mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    {item.organization}
                   </p>
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-4">
+                    <Calendar className="w-4 h-4" />
+                    {item.period}
+                  </div>
+                  <ul className="space-y-2">
+                    {item.achievements.map((achievement, i) => (
+                      <li
+                        key={i}
+                        className="text-sm text-foreground/80 flex items-start gap-2"
+                      >
+                        <span className="text-accent mt-1">•</span>
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              </div>
-              <div className="mt-6 text-center">
-                <Button variant="outline" asChild>
-                  <a href="/assets/cv.pdf" download>
-                    Lihat CV Lengkap
-                  </a>
-                </Button>
               </div>
             </div>
+          ))}
+          
+          <div className="mt-8 text-center">
+            <Button variant="outline" asChild>
+              <a href="/assets/cv.pdf" download>
+                Lihat CV Lengkap
+              </a>
+            </Button>
           </div>
         </div>
       </div>
