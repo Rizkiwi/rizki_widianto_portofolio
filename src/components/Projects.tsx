@@ -38,7 +38,7 @@ const Projects = () => {
 
   useEffect(() => {
     // Load projects from JSON
-    fetch("/data/projects.json")
+    fetch(`${import.meta.env.BASE_URL}data/projects.json`)
       .then((res) => res.json())
       .then((data) => {
         // Map image paths to imported images
