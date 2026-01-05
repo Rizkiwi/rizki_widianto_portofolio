@@ -1,44 +1,73 @@
 [
   {
-    "title": "Hospital ETL Pipelines",
-    "tags": ["ETL", "Airflow", "Database"],
-    "stack": ["Python", "Apache Airflow", "MySQL", "PostgreSQL"],
-    "summary": "Pipeline sinkronisasi data klinis end-to-end dengan preview CSV dan validasi otomatis.",
-    "image": "/src/assets/projects/etl-hospital.png",
-    "github": "https://github.com/rizkiwidianto/etl-hospital",
+    "title": "GadgetSnap",
+    "tags": ["ML"],
+    "stack": ["Python", "Flask", "Pandas"],
+    "summary": "A project to build a machine learning model that predicts suitable smartphones based on consumer-defined specifications.",
+    "image": "/src/assets/projects/gadgetsnap.png",
+    "github": "https://github.com/Rizkiwi/Gadget_Snap",
     "demo": "",
     "highlights": [
-      "12+ DAG dengan incremental upsert untuk efisiensi tinggi",
-      "Konversi zona waktu otomatis ke Asia/Jakarta",
-      "Sistem validasi & preview CSV terintegrasi"
+      "A project for the Algorithm of Programming II course, involving 2 members, aimed at applying Machine Learning through a website within a 2-month timeframe.",
+      "The objective was to assist users in finding mobile phones based on desired specifications using classification methods.",
+      "Managed the backend by utilizing Flask to connect the Machine Learning model with the website and performing web scraping, resulting in a total of 187 data entries."
     ]
   },
   {
-    "title": "Analytics Dashboard",
-    "tags": ["Analytics", "Dashboard", "BI"],
-    "stack": ["Python", "Streamlit", "Pandas", "Plotly"],
-    "summary": "Dashboard interaktif untuk analisis data bisnis real-time dengan visualisasi KPI.",
-    "image": "/src/assets/projects/analytics-dashboard.png",
-    "github": "https://github.com/rizkiwidianto/analytics-dashboard",
-    "demo": "https://analytics-demo.vercel.app",
+    "title": "Cholesterol Classification Prediction",
+    "tags": ["ML"],
+    "stack": ["Python", "Streamlit", "Pandas"],
+    "summary": "A machine learning project designed to predict cholesterol levels based on patient health data.",
+    "image": "/src/assets/projects/Choles_ML_2.png",
+    "demo": "https://mcfweb-iris-tentan.streamlit.app/",
     "highlights": [
-      "Visualisasi 15+ metrik bisnis penting",
-      "Filter interaktif dan drill-down capabilities",
-      "Export otomatis ke PDF dan Excel"
+      "This project focuses on predicting the classification of an individual's cholesterol based on health indicators to identify which variables influence cholesterol levels.",
+      "Performed model interpretation and analysis of the results.",
+      "Deployed the model using Streamlit by creating a user-friendly interface to showcase the model's capabilities."
     ]
   },
   {
-    "title": "ML Prediction Model",
-    "tags": ["ML", "Analytics", "NLP"],
-    "stack": ["Python", "Scikit-learn", "TensorFlow", "FastAPI"],
-    "summary": "Model machine learning untuk prediksi churn customer dengan akurasi tinggi.",
-    "image": "/src/assets/projects/ml-model.png",
-    "github": "https://github.com/rizkiwidianto/ml-churn-prediction",
-    "demo": "",
+    "title": "Product Sales Performance Dashboard",
+    "tags": ["Analytics", "Dashboard"],
+    "stack": ["Dashboard", "Analytics", "Looker Studio"],
+    "summary": "This dashboard is designed to comprehensively monitor and analyze product sales performance across multiple stores.",
+    "image": "/src/assets/projects/Dashboard Sales.png",
+    "github": "",
+    "demo": "https://lookerstudio.google.com/reporting/73beb930-6545-44b8-990b-43bfa6b1a705",
     "highlights": [
-      "Akurasi model 94% dengan Random Forest",
-      "Feature engineering & selection otomatis",
-      "REST API deployment dengan FastAPI"
+      "Profit trends remained relatively stable with slight fluctuations from 2020 to 2022.",
+      "The Nova brand dominated both sales volume and total profit.",
+      "Partner and reseller channels were the main contributors to revenue.",
+      "The highest concentration of sales occurred on the island of Java."
+    ]
+  },
+  {
+    "title": "Employees Performance Dashboard",
+    "tags": ["Analytics", "Dashboard"],
+    "stack": ["Dashboard", "Analytics", "Power BI"],
+    "summary": "The Employees Performance Dashboard is designed to help management comprehensively monitor human resource conditions, including employee performance, attendance rates, and job satisfaction.",
+    "image": "/src/assets/projects/Dashboard Employees.png",
+    "github": "",
+    "demo": "https://drive.google.com/file/d/1CcTPRWct6u8eB-DNIahKbDLqWwEH76Yw/view?usp=sharing",
+    "highlights": [
+      "Customer Service, Product, and Operations departments show the highest average performance.",
+      "Sales and Marketing departments have relatively lower performance scores compared to other departments.",
+      "Positions such as QA Engineer, Operations Manager, and Warehouse Supervisor demonstrate the highest performance.",
+      "The scatter plot shows a positive correlation between training hours and performance scores.",
+      "Employees classified as High and Excellent performers have more consistent attendance rates."
+    ]
+  },
+  {
+    "title": "BRI Liga 1 Dashboard",
+    "tags": ["Analytics", "Dashboard"],
+    "stack": ["Dashboard", "Analytics", "Tableau"],
+    "summary": "This dashboard presents visualizations of BRI Liga 1 2024/25 player statistics. In this project, player data was independently collected through web scraping from Transfermarkt, then processed, cleaned, and visualized into an interactive dashboard to generate informative insights.",
+    "image": "/src/assets/projects/Dashboard Liga 1.png",
+    "github": "",
+    "demo": "https://drive.google.com/drive/folders/1PnHldXBfPF25NAXh5N8_n7o5NhDfV6BO",
+    "highlights": [
+      "Several players such as Sonny Stevens, Nadeo Argawinata, and Lúcio recorded the highest playing minutes.",
+      "Players originate from various cities, with a strong concentration from Jakarta, Surabaya, and Kediri."
     ]
   }
 ]

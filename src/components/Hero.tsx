@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Database, TrendingUp, Code } from "lucide-react";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@/assets/Foto_Rizki.jpg";
 
 const Hero = () => {
   const stats = [
@@ -43,18 +43,19 @@ const Hero = () => {
             Rizki Widianto
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-6">
-            Data Engineer | Data Analyst
+            Data Engineer | Data Analyst | Data Scientist
           </p>
 
           {/* Description */}
-          <p className="max-w-2xl text-base md:text-lg text-foreground/80 mb-10 leading-relaxed">
-            Saya lulusan Data Science yang fokus pada rekayasa data, ETL, dan
-            analitik terapan. Terbiasa membangun pipeline end-to-end serta
-            dashboard yang actionable.
+          <p className="max-w-2xl text-base md:text-lg font-semibold text-foreground">
+            Certified Data Analyst Associate by BNSP.
+          </p>
+          <p className="max-w-2xl text-base md:text-lg text-foreground/80 mb-4 leading-relaxed">
+            I am a Data Science graduate with a focus on data analysis, ETL, and Machine Learning.
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 w-full max-w-3xl">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 w-full max-w-3xl">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -67,7 +68,7 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
@@ -79,8 +80,8 @@ const Hero = () => {
               Lihat Experience
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="/assets/cv.pdf" download>
-                Unduh CV
+              <a href="/assets/Associate Data Analyst_Sertifikasi_Rizki Widianto.pdf" download>
+                Lihat Sertifikasi
               </a>
             </Button>
           </div>

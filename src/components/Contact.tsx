@@ -19,19 +19,19 @@ const Contact = () => {
       icon: Mail,
       label: "Email",
       href: "mailto:rizki.widianto@example.com",
-      username: "rizki.widianto@example.com",
+      username: "rwidianto5@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/rizkiwidianto",
-      username: "/rizkiwidianto",
+      href: "https://www.linkedin.com/in/rizki-widianto/",
+      username: "Rizki Widianto",
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/rizkiwidianto",
-      username: "/rizkiwidianto",
+      href: "https://github.com/Rizkiwi",
+      username: "Rizkiwi",
     },
   ];
 
@@ -91,7 +91,7 @@ const Contact = () => {
             Contact Me
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Mari berdiskusi tentang data, proyek, atau peluang kolaborasi
+            Let’s discuss data, projects, or collaboration opportunities.
           </p>
         </div>
 
@@ -99,10 +99,9 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Mari Terhubung</h3>
+              <h3 className="text-2xl font-bold mb-4">Let's Connect</h3>
               <p className="text-muted-foreground mb-6">
-                Saya selalu terbuka untuk berdiskusi tentang proyek data
-                engineering, analytics, atau peluang kolaborasi menarik.
+                I am always open to discussing collaboration opportunities.
               </p>
             </div>
 

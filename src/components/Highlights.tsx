@@ -1,38 +1,57 @@
-import { Calendar, TrendingUp } from "lucide-react";
+import { Calendar, TrendingUp,Briefcase, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Highlights = () => {
   const highlights = [
     {
-      title: "Data Engineer Intern",
+      type: "work",
+      title: "Data Engineer",
       organization: "Nexmedis",
-      period: "Jan 2025 - Present",
+      period: "Aug 2025 - Present",
       achievements: [
-        "Membangun 12+ DAG Airflow untuk sinkronisasi data RS (MySQL → Postgres)",
-        "Menurunkan waktu latency data dari 2 jam → 15 menit",
-        "Standardisasi mapping ke skema klinis internal",
+        "Built 12+ Airflow DAGs for hospital data synchronization (MySQL → PostgreSQL)",
+        "Performed database migration mapping using Apache Airflow",
+        "Standardized database structures according to FHIR standards"
       ],
     },
     {
-      title: "Data Analyst",
-      organization: "PT Analytics Indonesia",
-      period: "Jul 2024 - Des 2024",
+      type: "work",
+      title: "Data Engineer Intern",
+      organization: "Direktorat Sistem Informasi dan Digitalisasi Universitas Airlangga ",
+      period: "Jan 2024 - Feb 2024",
       achievements: [
-        "Analisis performa bisnis dengan SQL & Python menghasilkan insight 30% peningkatan revenue",
-        "Membuat dashboard Tableau untuk 5+ departemen",
-        "Automasi reporting mingguan dengan Python scripts",
+          "Demonstrated the ability to understand database structures and implement them using Navicat",
+          "Developed queries for approximately 30 data warehouses using PostgreSQL"
+        ],
+    },
+    {
+      type: "achievement",
+      title: "3rd Winner of Data Science Competition GAMMAFEST",
+      organization: "IPB University",
+      period: "May 2024",
+      achievements: [
+        "GAMMAFEST Data Science Competition is a competition that processes C1 Pemilu images to read the text using image classification.",
       ],
     },
     {
-      title: "Best Final Project",
-      organization: "Universitas Data Science",
-      period: "2024",
+      type: "achievement",
+      title: "3rd Winner of Data Science Competition MCF",
+      organization: "ITB",
+      period: "May 2024",
       achievements: [
-        "Proyek ML prediction churn customer dengan akurasi 94%",
-        "Presentasi hasil di konferensi nasional",
-        "Publikasi paper di jurnal terakreditasi",
+        "MCF Data Science Competition is a competition that processes cholesterol data to identify health factors with classification.",
       ],
     },
+    {
+      type: "achievement",
+      title: "3rd Winner of Data Science Competition ICONIC",
+      organization: "Siliwangi University",
+      period: "Oct 2024",
+      achievements: [
+        "ICONIC is a competition organized by Universitas Siliwangi aimed at predicting credit card application eligibility using demographic and financial data.",
+      ],
+    },
+
   ];
 
   return (
@@ -43,7 +62,7 @@ const Highlights = () => {
             Experience
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Prestasi dan pengalaman terbaik dalam perjalanan karir saya
+            Key Achievements and Experiences Throughout My Career
           </p>
         </div>
 
@@ -56,9 +75,17 @@ const Highlights = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <TrendingUp className="w-6 h-6 text-primary" />
+                <div
+                  className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0
+                    ${item.type === "work" ? "bg-primary/10" : "bg-yellow-500/10"}`}
+                >
+                  {item.type === "work" ? (
+                    <Briefcase className="w-6 h-6 text-primary" />
+                  ) : (
+                    <Award className="w-6 h-6 text-yellow-500" />
+                  )}
                 </div>
+
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-foreground mb-1">
                     {item.title}

@@ -66,7 +66,7 @@ const Projects = () => {
             Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Proyek-proyek data engineering dan analytics yang telah saya kerjakan
+            Projects I Have Worked On
           </p>
         </div>
 

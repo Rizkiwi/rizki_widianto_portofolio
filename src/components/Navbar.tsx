@@ -27,18 +27,16 @@ const Navbar = () => {
         }
       }
     };
-    
-    handleScroll(); // Call once on mount
+
+    handleScroll(); // once on mount
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    const root = document.documentElement;
+    if (isDark) root.classList.add("dark");
+    else root.classList.remove("dark");
   }, [isDark]);
 
   const navLinks = [
@@ -59,27 +57,27 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+        isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+        {/* ==== NAV BAR ROW (CENTERED MENU) ==== */}
+        <div className="grid grid-cols-3 items-center h-16 md:h-20">
+          {/* Left: Logo */}
           <a
             href="#home"
-            className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
+            className="justify-self-start text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("#home");
             }}
+            aria-label="Go to Home"
           >
             RW
           </a>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Center: Desktop Navigation (centered) */}
+          <div className="hidden md:flex items-center gap-8 justify-self-center">
             {navLinks.map((link) => {
               const isActive = activeSection === link.href.replace("#", "");
               return (
@@ -91,9 +89,7 @@ const Navbar = () => {
                     scrollToSection(link.href);
                   }}
                   className={`text-sm font-medium transition-colors relative ${
-                    isActive
-                      ? "text-primary"
-                      : "text-foreground/80 hover:text-primary"
+                    isActive ? "text-primary" : "text-foreground/80 hover:text-primary"
                   }`}
                 >
                   {link.name}
@@ -105,42 +101,39 @@ const Navbar = () => {
             })}
           </div>
 
-          {/* Actions */}
-          <div className="flex items-center gap-3">
+          {/* Right: Actions */}
+          <div className="flex items-center gap-3 justify-self-end">
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsDark(!isDark)}
               className="rounded-full"
+              aria-label="Toggle theme"
             >
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
 
-            <Button
-              variant="default"
-              size="sm"
-              className="hidden md:flex"
-              asChild
-            >
+            <Button variant="default" size="sm" className="hidden md:flex" asChild>
               <a href="/assets/cv.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </a>
             </Button>
 
-            {/* Mobile Menu Toggle */}
+            {/* Mobile menu toggle */}
             <Button
               variant="ghost"
               size="icon"
               className="md:hidden"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? <X /> : <Menu />}
             </Button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* ==== MOBILE MENU ==== */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
@@ -155,9 +148,7 @@ const Navbar = () => {
                       scrollToSection(link.href);
                     }}
                     className={`transition-colors py-2 ${
-                      isActive
-                        ? "text-primary font-medium"
-                        : "text-foreground/80 hover:text-primary"
+                      isActive ? "text-primary font-medium" : "text-foreground/80 hover:text-primary"
                     }`}
                   >
                     {link.name}
