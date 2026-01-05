@@ -115,8 +115,11 @@ const Highlights = () => {
           
           <div className="mt-8 text-center">
             <Button variant="outline" asChild>
-              <a href="/assets/Rizki Widanto-resume_3.pdf" download>
-                Lihat CV Lengkap
+              <a
+                href={`${import.meta.env.BASE_URL}assets/Rizki Widanto-resume_3.pdf`}
+                download
+              >
+                View Full CV
               </a>
             </Button>
           </div>

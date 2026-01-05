@@ -114,7 +114,10 @@ const Navbar = () => {
             </Button>
 
             <Button variant="default" size="sm" className="hidden md:flex" asChild>
-              <a href="/assets/Rizki Widanto-resume_3.pdf" download>
+              <a
+                href={`${import.meta.env.BASE_URL}assets/Rizki Widanto-resume_3.pdf`}
+                download
+              >
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </a>
