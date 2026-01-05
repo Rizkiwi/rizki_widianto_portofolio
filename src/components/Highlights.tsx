@@ -115,7 +115,7 @@ const Highlights = () => {
           
           <div className="mt-8 text-center">
             <Button variant="outline" asChild>
-              <a href="/assets/cv.pdf" download>
+              <a href="/assets/Rizki Widanto-resume_3.pdf" download>
                 Lihat CV Lengkap
               </a>
             </Button>

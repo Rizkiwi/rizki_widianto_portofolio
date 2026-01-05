@@ -33,7 +33,7 @@ const Hero = () => {
             <img
               src={profileImage}
               alt="Rizki Widianto"
-              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/20 shadow-lg"
+              className="relative w-36 h-36 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/20 shadow-lg"
               loading="eager"
             />
           </div>
