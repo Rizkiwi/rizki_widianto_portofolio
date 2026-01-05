@@ -10,9 +10,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-import etlImage from "@/assets/projects/etl-hospital.png";
-import analyticsImage from "@/assets/projects/analytics-dashboard.png";
-import mlImage from "@/assets/projects/ml-model.png";
 
 interface Project {
   title: string;
@@ -30,26 +27,16 @@ const Projects = () => {
   const [selectedTag, setSelectedTag] = useState<string>("All");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const imageMap: Record<string, string> = {
-    "/src/assets/projects/etl-hospital.png": etlImage,
-    "/src/assets/projects/analytics-dashboard.png": analyticsImage,
-    "/src/assets/projects/ml-model.png": mlImage,
-  };
 
   useEffect(() => {
-    // Load projects from JSON
     fetch(`${import.meta.env.BASE_URL}data/projects.json`)
       .then((res) => res.json())
       .then((data) => {
-        // Map image paths to imported images
-        const mappedProjects = data.map((project: Project) => ({
-          ...project,
-          image: imageMap[project.image] || project.image,
-        }));
-        setProjects(mappedProjects);
+        setProjects(data); // LANGSUNG SET
       })
       .catch((err) => console.error("Failed to load projects:", err));
   }, []);
+
 
   const allTags = ["All", ...new Set(projects.flatMap((p) => p.tags))];
 
@@ -98,7 +85,7 @@ const Projects = () => {
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={project.image}
+                  src={`${import.meta.env.BASE_URL}${project.image}`}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
