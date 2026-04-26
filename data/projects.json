@@ -1,5 +1,22 @@
 [
   {
+    "title": "Sales Forecasting Dashboard",
+    "tags": ["Data Analysis", "Forecasting", "Dashboard"],
+    "stack": ["Python", "Streamlit", "Pandas", "Plotly", "Prophet"],
+    "summary": "An interactive sales analytics and forecasting dashboard that enables users to explore business performance and predict future sales using time series modeling.",
+    "image": "assets/projects/sales-forecasting.png",
+    "github": "https://github.com/Rizkiwi/stock-facebook-prophet-predict",
+    "demo": "https://stock-market-predicts.streamlit.app/",
+    "highlights": [
+      "Developed an interactive dashboard to analyze sales performance including KPIs, category breakdown, regional analysis, and product-level insights.",
+      "Implemented time series forecasting using Facebook Prophet to predict future sales trends with confidence intervals.",
+      "Designed a dynamic filtering system allowing users to analyze data by year, category, region, and segment.",
+      "Built rich data visualizations using Plotly including trend lines, heatmaps, bar charts, and pie charts.",
+      "Integrated alert system to detect significant drops in predicted sales and provide business insights.",
+      "Created a clean and modern UI using Streamlit with custom styling for better user experience."
+    ]
+  },
+  {
     "title": "GadgetSnap",
     "tags": ["ML"],
     "stack": ["Python", "Flask", "Pandas"],
