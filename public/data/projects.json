@@ -4,7 +4,7 @@
     "tags": ["ML"],
     "stack": ["Python", "Flask", "Pandas"],
     "summary": "A project to build a machine learning model that predicts suitable smartphones based on consumer-defined specifications.",
-    "image": "/assets/projects/gadgetsnap.png",
+    "image": "assets/projects/gadgetsnap.png",
     "github": "https://github.com/Rizkiwi/Gadget_Snap",
     "demo": "",
     "highlights": [
@@ -18,7 +18,7 @@
     "tags": ["Data Analysis", "Machine Learning"],
     "stack": ["Python", "Streamlit", "Pandas", "Plotly", "Scikit-learn", "Transformers"],
     "summary": "An interactive web application to scrape, analyze, and visualize product reviews from Tokopedia using machine learning techniques such as sentiment analysis and topic modeling.",
-    "image": "/assets/projects/tokopedia-review.png",
+    "image": "assets/projects/tokopedia-review.png",
     "github": "https://github.com/Rizkiwi/tokopedia-review-analysis",
     "demo": "https://tokopedia-review-analysis-rizki-widianto.streamlit.app/",
     "highlights": [
@@ -34,7 +34,7 @@
     "tags": ["ML"],
     "stack": ["Python", "Streamlit", "Pandas"],
     "summary": "A machine learning project designed to predict cholesterol levels based on patient health data.",
-    "image": "/assets/projects/Choles_ML_2.png",
+    "image": "assets/projects/Choles_ML_2.png",
     "demo": "https://mcfweb-iris-tentan.streamlit.app/",
     "highlights": [
       "This project focuses on predicting the classification of an individual's cholesterol based on health indicators to identify which variables influence cholesterol levels.",
@@ -47,7 +47,7 @@
     "tags": ["Analytics", "Dashboard"],
     "stack": ["Dashboard", "Analytics", "Looker Studio"],
     "summary": "This dashboard is designed to comprehensively monitor and analyze product sales performance across multiple stores.",
-    "image": "/assets/projects/Dashboard Sales.png",
+    "image": "assets/projects/Dashboard Sales.png",
     "github": "",
     "demo": "https://lookerstudio.google.com/reporting/73beb930-6545-44b8-990b-43bfa6b1a705",
     "highlights": [
@@ -62,7 +62,7 @@
     "tags": ["Analytics", "Dashboard"],
     "stack": ["Dashboard", "Analytics", "Power BI"],
     "summary": "The Employees Performance Dashboard is designed to help management comprehensively monitor human resource conditions, including employee performance, attendance rates, and job satisfaction.",
-    "image": "/assets/projects/Dashboard Employees.png",
+    "image": "assets/projects/Dashboard Employees.png",
     "github": "",
     "demo": "https://drive.google.com/file/d/1CcTPRWct6u8eB-DNIahKbDLqWwEH76Yw/view?usp=sharing",
     "highlights": [
@@ -78,7 +78,7 @@
     "tags": ["Analytics", "Dashboard"],
     "stack": ["Dashboard", "Analytics", "Tableau"],
     "summary": "This dashboard presents visualizations of BRI Liga 1 2024/25 player statistics. In this project, player data was independently collected through web scraping from Transfermarkt, then processed, cleaned, and visualized into an interactive dashboard to generate informative insights.",
-    "image": "/assets/projects/Dashboard Liga 1.png",
+    "image": "assets/projects/Dashboard Liga 1.png",
     "github": "",
     "demo": "https://drive.google.com/drive/folders/1PnHldXBfPF25NAXh5N8_n7o5NhDfV6BO",
     "highlights": [
