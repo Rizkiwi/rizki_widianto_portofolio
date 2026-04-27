@@ -80,7 +80,7 @@ const Hero = () => {
               Lihat Experience
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="/assets/Associate Data Analyst_Sertifikasi_Rizki Widianto.pdf" download>
+              <a href="/assets/Associate_Data_Analyst_Sertifikasi_Rizki_Widianto.pdf" download>
                 Lihat Sertifikasi
               </a>
             </Button>
