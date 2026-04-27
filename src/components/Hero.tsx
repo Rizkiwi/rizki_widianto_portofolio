@@ -80,9 +80,12 @@ const Hero = () => {
               Lihat Experience
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="/assets/Associate_Data_Analyst_Sertifikasi_Rizki_Widianto.pdf" download>
+              {/* <a href="/assets/Associate_Data_Analyst_Sertifikasi_Rizki_Widianto.pdf" download> */}
+              {/* <a href="/assets/Associate_Data_Analyst_Sertifikasi_Rizki_Widianto.pdf" target="_blank" download> */}
+              <a href="/rizki_widianto_portofolio/assets/Associate_Data_Analyst_Sertifikasi_Rizki_Widianto.pdf" target="_blank" download>
                 Lihat Sertifikasi
               </a>
+              {/* </a> */}
             </Button>
           </div>
         </div>
