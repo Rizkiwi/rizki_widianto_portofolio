@@ -1,7 +1,7 @@
 [
   {
     "title": "Sales Forecasting Dashboard",
-    "tags": ["Data Analysis", "Forecasting", "Dashboard"],
+    "tags": ["Data Analysis", "Machine Learning", "Dashboard"],
     "stack": ["Python", "Streamlit", "Pandas", "Plotly", "Prophet"],
     "summary": "An interactive sales analytics and forecasting dashboard that enables users to explore business performance and predict future sales using time series modeling.",
     "image": "assets/projects/sales-forecasting.png",
@@ -18,7 +18,7 @@
   },
   {
     "title": "GadgetSnap",
-    "tags": ["ML"],
+    "tags": ["Machine Learning"],
     "stack": ["Python", "Flask", "Pandas"],
     "summary": "A project to build a machine learning model that predicts suitable smartphones based on consumer-defined specifications.",
     "image": "assets/projects/gadgetsnap.png",
@@ -48,7 +48,7 @@
   },
   {
     "title": "Cholesterol Classification Prediction",
-    "tags": ["ML"],
+    "tags": ["Machine Learning"],
     "stack": ["Python", "Streamlit", "Pandas"],
     "summary": "A machine learning project designed to predict cholesterol levels based on patient health data.",
     "image": "assets/projects/Choles_ML_2.png",
