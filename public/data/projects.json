@@ -75,6 +75,25 @@
     ]
   },
   {
+    "title": "Indonesia Tourism Trends Dashboard (2022-2025)",
+    "tags": ["Data Analysis", "Dashboard", "Visualization"],
+    "stack": ["Google Sheets", "Data Visualization", "Dashboard"],
+    "summary": "An interactive dashboard that analyzes trends in domestic tourist travel in Indonesia from 2022 to 2025, including seasonal patterns, entry point distribution, and geographic insights.",
+    "image": "assets/projects/tourism-dashboard.png",
+    "github": "",
+    "demo": "https://docs.google.com/spreadsheets/d/1c66ETLO4sV4IapVv4TZHfnZNZLGsBG4e0A222XonxGI/edit?usp=sharing",
+    "highlights": [
+      "Developed an interactive dashboard using Google Sheets with dynamic year filtering to explore tourism trends from 2022 to 2025.",
+      "Analyzed key performance indicators (KPIs) such as total trips, monthly averages, peak and lowest travel months, and year-over-year growth.",
+      "Built time series visualizations to identify seasonal travel patterns and fluctuations throughout the year.",
+      "Created distribution charts to compare entry points (air, sea, and land) and identify dominant transportation modes.",
+      "Implemented geographic visualizations using Geo Charts to map the distribution of tourist entry points across Indonesia.",
+      "Designed ranking and sorting mechanisms to highlight top-performing entry points dynamically.",
+      "Applied conditional formatting (heatmaps) to reveal seasonal patterns and peak travel periods.",
+      "Ensured a clean and structured dashboard layout for intuitive data exploration and storytelling."
+    ]
+  },
+  {
     "title": "Employees Performance Dashboard",
     "tags": ["Analytics", "Dashboard"],
     "stack": ["Dashboard", "Analytics", "Power BI"],
