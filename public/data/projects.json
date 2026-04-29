@@ -76,7 +76,7 @@
   },
   {
     "title": "Indonesia Tourism Trends Dashboard (2022-2025)",
-    "tags": ["Data Analysis", "Dashboard", "Visualization"],
+    "tags": ["Data Analysis", "Dashboard", "Analytics"],
     "stack": ["Google Sheets", "Data Visualization", "Dashboard"],
     "summary": "An interactive dashboard that analyzes trends in domestic tourist travel in Indonesia from 2022 to 2025, including seasonal patterns, entry point distribution, and geographic insights.",
     "image": "assets/projects/tourism-dashboard.png",
