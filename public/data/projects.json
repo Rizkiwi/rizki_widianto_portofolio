@@ -17,6 +17,25 @@
     ]
   },
   {
+    "title": "YouTube Shorts Trend Analyzer",
+    "tags": ["Data Analysis", "Machine Learning","Dashboard"],
+    "stack": ["Python", "Streamlit", "Pandas", "Plotly", "YouTube API"],
+    "summary": "An interactive dashboard to collect, analyze, and visualize trending YouTube Shorts data in Indonesia using the YouTube Data API, enabling insights into viral content patterns and performance metrics.",
+    "image": "assets/projects/youtube-analyzer.png",
+    "github": "https://github.com/Rizkiwi/yt-shorts-analyzer",
+    "demo": "https://yt-shorts-analyzer.streamlit.app/",
+    "highlights": [
+      "Developed an automated data collection pipeline using YouTube Data API to retrieve trending Shorts videos based on keywords and filters.",
+      "Engineered key performance metrics such as engagement rate, velocity (views per hour), and viral score to evaluate content growth and popularity.",
+      "Built an interactive dashboard using Streamlit and Plotly for real-time data exploration, including top videos, category distribution, and performance insights.",
+      "Implemented filtering features such as keyword-based search, upload date range, content type (Shorts vs short videos), and region-specific analysis.",
+      "Designed a timing analysis module to identify optimal upload times using heatmaps and time-based aggregation.",
+      "Applied text analysis techniques to extract trending keywords, hashtags, and content patterns from video titles and descriptions.",
+      "Integrated scoring system to classify videos into Hot, Warm, and Rising categories based on viral potential.",
+      "Created an end-to-end pipeline from data collection → preprocessing → feature engineering → visualization → insight generation."
+    ]
+  },
+  {
     "title": "GadgetSnap",
     "tags": ["Machine Learning"],
     "stack": ["Python", "Flask", "Pandas"],
